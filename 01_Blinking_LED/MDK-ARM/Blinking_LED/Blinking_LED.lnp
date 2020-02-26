@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"blinking_led\startup_stm32f411xe.o"
+"blinking_led\system_stm32f4xx.o"
+"blinking_led\stm32f4xx_it.o"
+"blinking_led\stm32f4xx_hal_msp.o"
+"blinking_led\main.o"
+"blinking_led\stm32f4xx_hal_cortex.o"
+"blinking_led\stm32f4xx_hal_dma.o"
+"blinking_led\stm32f4xx_hal_tim_ex.o"
+"blinking_led\stm32f4xx_hal_flash_ramfunc.o"
+"blinking_led\stm32f4xx_hal_gpio.o"
+"blinking_led\stm32f4xx_hal_flash.o"
+"blinking_led\stm32f4xx_hal_flash_ex.o"
+"blinking_led\stm32f4xx_hal_pwr.o"
+"blinking_led\stm32f4xx_hal_tim.o"
+"blinking_led\stm32f4xx_hal_dma_ex.o"
+"blinking_led\stm32f4xx_hal_rcc_ex.o"
+"blinking_led\stm32f4xx_hal_pwr_ex.o"
+"blinking_led\stm32f4xx_hal_rcc.o"
+"blinking_led\stm32f4xx_hal.o"
+--library_type=microlib --strict --scatter "Blinking_LED\Blinking_LED.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blinking_LED.map" -o Blinking_LED\Blinking_LED.axf

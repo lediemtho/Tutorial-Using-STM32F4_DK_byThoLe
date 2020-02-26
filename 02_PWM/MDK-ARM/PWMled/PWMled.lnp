@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"pwmled\system_stm32f4xx.o"
+"pwmled\startup_stm32f411xe.o"
+"pwmled\stm32f4xx_hal_flash.o"
+"pwmled\stm32f4xx_hal_dma.o"
+"pwmled\stm32f4xx_hal_rcc.o"
+"pwmled\stm32f4xx_hal_flash_ex.o"
+"pwmled\stm32f4xx_hal_tim_ex.o"
+"pwmled\stm32f4xx_hal_flash_ramfunc.o"
+"pwmled\stm32f4xx_hal_pwr.o"
+"pwmled\stm32f4xx_hal_cortex.o"
+"pwmled\stm32f4xx_hal_dma_ex.o"
+"pwmled\stm32f4xx_hal_tim.o"
+"pwmled\stm32f4xx_hal_gpio.o"
+"pwmled\stm32f4xx_hal_rcc_ex.o"
+"pwmled\stm32f4xx_hal_pwr_ex.o"
+"pwmled\stm32f4xx_hal.o"
+"pwmled\stm32f4xx_hal_msp.o"
+"pwmled\main.o"
+"pwmled\stm32f4xx_it.o"
+--library_type=microlib --strict --scatter "PWMled\PWMled.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWMled.map" -o PWMled\PWMled.axf

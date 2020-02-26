@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"displaylcd\startup_stm32f411xe.o"
+"displaylcd\main.o"
+"displaylcd\stm32f4xx_it.o"
+"displaylcd\stm32f4xx_hal_msp.o"
+"displaylcd\lcd_txt.o"
+"displaylcd\stm32f4xx_hal_tim.o"
+"displaylcd\stm32f4xx_hal_tim_ex.o"
+"displaylcd\stm32f4xx_hal_rcc.o"
+"displaylcd\stm32f4xx_hal_rcc_ex.o"
+"displaylcd\stm32f4xx_hal_flash.o"
+"displaylcd\stm32f4xx_hal_flash_ex.o"
+"displaylcd\stm32f4xx_hal_flash_ramfunc.o"
+"displaylcd\stm32f4xx_hal_gpio.o"
+"displaylcd\stm32f4xx_hal_dma_ex.o"
+"displaylcd\stm32f4xx_hal_dma.o"
+"displaylcd\stm32f4xx_hal_pwr.o"
+"displaylcd\stm32f4xx_hal_pwr_ex.o"
+"displaylcd\stm32f4xx_hal_cortex.o"
+"displaylcd\stm32f4xx_hal.o"
+"displaylcd\stm32f4xx_hal_exti.o"
+"displaylcd\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "DisplayLCD\DisplayLCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DisplayLCD.map" -o DisplayLCD\DisplayLCD.axf
